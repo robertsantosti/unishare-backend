@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "server": "ts-node-dev src/server.ts",
+    "start": "node src/server.js",
     "db:migrate": "knex migrate:latest",
     "db:migration": "knex migrate:make",
     "db:rollback": "knex migrate:rollback",
