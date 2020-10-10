@@ -8,6 +8,12 @@ const userTypesController = new UserTypesController();
 const usersController = new UsersController();
 const roomsController = new RoomsController();
 
+/** Index */
+routes
+  .get('/', (req, res) => {
+    return res.json({message: 'Bem vindo'});
+  })
+
 /** User Types Routes */
 routes
   .route("/user_types")
